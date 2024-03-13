@@ -1,14 +1,14 @@
-const image = document.getElementById("cover"),
-  title = document.getElementById("music-title"),
-  artist = document.getElementById("misic-artist"),
-  currentTimeEL = document.getElementById("current-time"),
-  durationEl = document.getElementById("duration"),
-  progress = document.getElementById("progress"),
-  playerProgress = document.getElementById("player-progress"),
-  prevBtn = document.getElementById("prev"),
-  nextBtn = document.getElementById("next"),
-  playBtn = document.getElementById("play"),
-  background = document.getElementById("bg-img")
+const image = document.getElementById('cover'),
+    title = document.getElementById('music-title'),
+    artist = document.getElementById('music-artist'),
+    currentTimeEl = document.getElementById('current-time'),
+    durationEl = document.getElementById('duration'),
+    progress = document.getElementById('progress'),
+    playerProgress = document.getElementById('player-progress'),
+    prevBtn = document.getElementById('prev'),
+    nextBtn = document.getElementById('next'),
+    playBtn = document.getElementById('play'),
+    background = document.getElementById('bg-img');
 
 const music = new Audio();
 
@@ -20,7 +20,7 @@ const songs = [
     artist: "Thalles Roberto",
   },
   {
-    path: "img/imagem 2.jpg",
+    path: "img/imagem 2.png",
     displayName: "Colossenses e suas linhas de amor",
     cover: "img/musica2.m4a",
     artist: "Marco Telles",
@@ -63,7 +63,7 @@ function toggleplay() {
 }
 
 function playMusic() {
-  isPlaying =true ;
+  isPlaying = true ;
   //change play button icon
   playBtn.classList.replace("fa-play", "fa-pause");
   //Set button hover title
@@ -83,10 +83,11 @@ function pauseMusic() {
 function loadMusic(song) {
   music.src = song.cover;
   title.textContent = song.displayName;
-  artist.textContent = song.artist ;// Correção feita aqui
+  artist.textContent = song.artist; // Correção feita aqui
   image.src = song.path;
-  background.src = song.path; // Ou background.src = song.cover; se preferir
-}
+  background.src = song.path ;// Ou background.src = song.cover; se preferir
+};
+
 
 
 function changeMusic(direction) {
