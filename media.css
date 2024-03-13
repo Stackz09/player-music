@@ -1,0 +1,17 @@
+@media screen and (max-width: 767px) {
+  .container {
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .player-img {
+    width: 250px;
+    margin-top: -20px;
+    margin-left: -25px;
+  }
+
+  .player-controls {
+    left: 80px;
+  }
+}

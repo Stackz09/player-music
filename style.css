@@ -1,0 +1,200 @@
+/*Importação da fonte(fómula da letra) */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+/*ajustando os elementos do body(corpo do site)*/
+body {
+  margin: 0;
+  font-family: "ubuntu", sans-serif;
+  font-size: 12px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*fundo do site (ajustes)*/
+.background {
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+}
+
+/*estilizando as imagens*/
+.background img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 50%;
+  min-height: 50%;
+  filter: blur(15px);
+  -webkit-filter: blur(50px);
+  transform: scale(1.1);
+}
+
+/*estilizando o fundo onde ficar o wallpaper(imagem)*/
+.container {
+  background-color: #e7e7e7;
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
+}
+
+/*sombra e transição do fundo do wallpaper(imagem)*/
+.container:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+/*centralizando o fundo do wallpaper(imagem)*/
+.player-img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+/*arrendondamento das bordas do wallpaper(imagem)*/
+.player-img img {
+  object-fit: cover;
+  border-radius: 20px;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*sombra e transição para o wallpaper*/
+.player-img:hover img {
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.8);
+}
+
+/*ajustando o wallpaper*/
+.player-img img.active {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+/*estilizando o título da música*/
+h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  margin: 10px 0 0;
+}
+
+/*estilizando o nome do cantor(es)*/
+h3 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  margin: 10px 0 0;
+}
+
+/*barra de duração da música*/
+.player-progress {
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px 35px;
+  height: 6px;
+  width: 90%;
+}
+
+/*barra de duração da música (segunda parte)*/
+.progress {
+  background-color: #212121;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.music-duration {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+}
+
+.fa-solid {
+  font-size: 30px;
+  color: #666;
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.fa-solid:hover {
+  filter: brightness(40%);
+}
+
+.play-button {
+  font-size: 44px;
+  position: relative;
+  top: 3px;
+}
+
+/*
+const songs = [
+  {
+    path: "img/imagem 1.jpg",
+    displayName: "Arde outra vez",
+    cover: "img/musica1.mp3",
+    artist: "Thalles Roberto",
+  },
+  {
+    path: "img/imagem 2.jpg",
+    displayName: "Colossenses e suas linhas de amor",
+    cover: "img/musica2.m4a",
+    artist: "Marco Telles",
+  },
+  {
+    path: "img/imagem 3.jpg",
+    displayName: "Furioso oceano",
+    cover: "img/musica3.m4a",
+    artist: "Jhonas Serra",
+  },
+  {
+    path: "img/imagem 4.jpg",
+    displayName: "Me leva pra casa",
+    cover: "img/musica4.m4a",
+    artist: "Israel Subirá",
+  },
+  {
+    path: "img/imagem 5.jpg",
+    displayName: "Ruja o Leão",
+    cover: "img/musica5.m4a",
+    artist: "Talita Catanzaro",
+  },
+  {
+    path: "img/imagem 6.jpg",
+    displayName: "vem me buscar",
+    cover: "img/musica6.m4a",
+    artist: "Jefferson & Suellen ",
+  },
+]
+
+*/
