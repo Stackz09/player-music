@@ -105,9 +105,9 @@ function updateProgessBar() {
   durationEl.textContent = `${formatTime(duration / 60)}:${formatTime(
     duration % 60
   )}`;
-  currentTimeEL.textContent = `${formatTime(currentTime / 60)}:${formatTime(
+  currentTimeEl.textContent = `${formatTime(currentTime / 60)}:${formatTime(
     currentTime % 60
-  )}`;
+  )}` ;
 }
 
 function setProgressBar(e) {
