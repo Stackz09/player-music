@@ -32,12 +32,6 @@ const songs = [
     artist: "Jhonas Serra",
   },
   {
-    path: "img/imagem 4.jpg",
-    displayName: "Me leva pra casa",
-    cover: "img/musica4.m4a",
-    artist: "Israel Subirá",
-  },
-  {
     path: "img/imagem 5.jpg",
     displayName: "Ruja o Leão",
     cover: "img/musica5.m4a",
@@ -72,6 +66,30 @@ const songs = [
     displayName: "Me ajude a melhorar (ao vivo)",
     cover: "img/musica 10.mp3",
     artist: "Eli Soares",
+  },
+  {
+    path: "img/imagem 11.avif",
+    displayName: "É tudo sobre você",
+    cover: "img/musica11.mp3",
+    artist: "Morada",
+  },
+  {
+    path: "img/imagem 12.jpg",
+    displayName: "Único",
+    cover: "img/musica 12.mp3",
+    artist: "Marco telles ",
+  },
+  {
+    path: "img/imagem 13.jpg",
+    displayName: "Até que o senhor venha",
+    cover: "img/musica13.mp3",
+    artist: "Davi Fernandes + Kaleb & Josh ",
+  },
+  {
+    path: "img/imagem 14.jpg",
+    displayName: "Eu tenho você",
+    cover: "img/musica14.mp3",
+    artist: "Marcelo Markes ",
   },
 ]
 
