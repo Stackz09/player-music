@@ -38,10 +38,10 @@ const songs = [
     artist: "Talita Catanzaro",
   },
   {
-    path: "img/imagem 6.jpg",
-    displayName: "vem me buscar",
-    cover: "img/musica6.m4a",
-    artist: "Jefferson & Suellen ",
+    path: "img/imagem111.jpeg",
+    displayName: "tua presença vale mais",
+    cover: "img/musica111.m4a",
+    artist: "Mateus Brito",
   },
   {
     path: "img/imagem 7.jpg",
